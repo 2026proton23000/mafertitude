@@ -1,5 +1,5 @@
 let carrito = {};
-const phoneMafer = "51913793195";
+const phoneMafer = "51934735936";
 
 // 1. Charger les produits depuis le JSON
 fetch('data/productos.json')
