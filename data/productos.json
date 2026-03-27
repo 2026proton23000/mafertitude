@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "nombre": "Yogurt de Fresa Natural",
+    "precio": 15.00,
+    "descripcion": "Elaborado con fresas seleccionadas, sin conservantes.",
+    "imagen": "images/yogurt-fresa.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Yogurt de Arándanos Puno",
+    "precio": 18.00,
+    "descripcion": "Sabor intenso con arándanos de altura.",
+    "imagen": "images/yogurt-arandanos.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Yogurt Griego Premium",
+    "precio": 20.00,
+    "descripcion": "Textura ultra cremosa, alta en proteínas.",
+    "imagen": "images/yogurt-griego.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Yogurt de Lúcuma de la Casa",
+    "precio": 16.00,
+    "descripcion": "El toque tradicional peruano en tu mesa.",
+    "imagen": "images/yogurt-lucuma.jpg"
+  }
+]

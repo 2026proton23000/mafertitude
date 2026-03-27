@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | La Lechería de Mafer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="cow-bg">
+
+    <header>
+        <div class="logo-text">La Lechería de Mafer</div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section style="max-width: 600px; margin: 40px auto;">
+            <div style="text-align: center; margin-bottom: 30px;">
+                <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 10px;">Escríbele a Mafer</h2>
+                <p>¿Tienes dudas sobre los ingredientes, pedidos especiales para eventos o ventas al por mayor en Tacna? ¡Estamos para ayudarte!</p>
+            </div>
+            
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <label for="nombre-contacto" style="font-weight: 600; font-size: 0.9rem;">Tu Nombre:</label>
+                    <input type="text" id="nombre-contacto" placeholder="Ej: Juan Pérez" 
+                           style="padding: 12px; border-radius: 10px; border: 1px solid #ddd; font-family: inherit;">
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <label for="msg-contacto" style="font-weight: 600; font-size: 0.9rem;">Tu Mensaje o Consulta:</label>
+                    <textarea id="msg-contacto" rows="6" placeholder="¿En qué podemos ayudarte?" 
+                              style="padding: 12px; border-radius: 10px; border: 1px solid #ddd; font-family: inherit; resize: vertical;"></textarea>
+                </div>
+
+                <button id="btn-enviar-duda" class="btn-whatsapp" style="margin-top: 10px;">
+                    💬 Enviar Consulta a WhatsApp
+                </button>
+            </div>
+
+            <div style="margin-top: 40px; text-align: center; border-top: 1px dashed #ccc; padding-top: 20px;">
+                <p style="font-size: 0.85rem; color: #666;">
+                    📍 Ubicación: Tacna, Perú<br>
+                    🕒 Horario de atención: Lunes a Sábado
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 2rem; color: #888; font-size: 0.8rem;">
+        &copy; 2026 La Lechería de Mafer. Todos los derechos reservados.
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/contacto.js"></script>
+</body>
+</html>

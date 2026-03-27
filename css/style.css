@@ -1,0 +1,111 @@
+/* Variables de design */
+:root {
+    --milk: #FFFFFF;
+    --cream: #FDFBF7;
+    --cow-black: #1A1A1A;
+    --accent-blue: #89CFF0;
+    --gold: #C5A059;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--milk);
+    color: var(--cow-black);
+    /* Image de fond : remplace par images/bg-pattern.png plus tard */
+    background-image: url('../images/cow-pattern.png'); 
+    background-attachment: fixed;
+}
+
+/* Header & Nav */
+header {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1.5rem 5%;
+    text-align: center;
+    border-bottom: 3px solid var(--cow-black);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cow-black);
+    font-weight: 600;
+    margin: 0 15px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+/* Sections */
+section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* Mobile Responsiv */
+@media (max-width: 768px) {
+    .logo-text { font-size: 1.5rem; }
+    nav a { margin: 0 5px; font-size: 0.75rem; }
+    section { margin: 20px; padding: 15px; }
+}
+
+/* Cards Produits */
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    background: var(--milk);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Boutons & Inputs */
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.btn-whatsapp:hover { background-color: #128C7E; }
+
+.qty-input {
+    width: 60px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    text-align: center;
+}

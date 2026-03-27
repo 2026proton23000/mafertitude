@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | La Lechería de Mafer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-text">La Lechería de Mafer</div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2 style="text-align: center; font-family: 'Playfair Display', serif;">Nuestra Selección</h2>
+        <p style="text-align: center; margin-bottom: 30px;">Selecciona tus sabores favoritos y haz tu pedido directamente a Mafer.</p>
+        
+        <div id="product-list" class="grid-productos">
+            </div>
+    </section>
+
+    <section id="pedido-section" style="max-width: 600px; border: 2px solid var(--cow-black);">
+        <h3 style="text-align: center;">Resumen de Pedido</h3>
+        <div id="carrito-detalle" style="margin-bottom: 20px;">
+            <p style="text-align: center; color: #888;">No has seleccionado productos aún.</p>
+        </div>
+        
+        <div id="form-pedido" style="display: none;">
+            <input type="text" id="nombre-cliente" placeholder="Tu nombre completo" style="width: 100%; padding: 10px; margin-bottom: 10px;">
+            <input type="text" id="direccion-cliente" placeholder="Dirección en Tacna (ej: Av. Bolognesi 123)" style="width: 100%; padding: 10px; margin-bottom: 20px;">
+            <button class="btn-whatsapp" onclick="enviarPedido()">🛒 Enviar Pedido por WhatsApp</button>
+        </div>
+    </section>
+    <script src="js/app.js"></script>
+    <script src="js/productos.js"></script>
+</body>
+</html>
