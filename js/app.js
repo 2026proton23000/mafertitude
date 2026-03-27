@@ -1,6 +1,6 @@
 // Configuration globale
 const CONFIG = {
-    phone: "51913793195",
+    phone: "51934735936",
     name: "La Lechería de Mafer"
 };
 
